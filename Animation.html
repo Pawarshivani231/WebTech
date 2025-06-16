@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation Property</title>
+        <style type="text/css">
+        .demo
+        {
+            font-size:100px;
+            text-align:center;
+            animation-name:blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes blink
+        {
+            50%
+            {
+                opacity:0;
+            }
+        }
+        </style>
+     </head>
+    <body>
+        <marquee></marquee>
+        <div>
+            <h2 class="demo">&#128151;</h2>
+            <h2 class="demo">&#128525;</h2>
+            <h2 class="demo">&#128536;</h2>
+            
+        </div>
+    </body>
+</html>
