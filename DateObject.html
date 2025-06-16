@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <h1 align="center">DATE OBJECT</h1>
+<center>
+    <script type="text/javascript">
+        let dt=new Date();
+        let dy=dt.getDay();
+        let dat=dt.getDate();
+        let mnth=(dt.getMonth())+1;
+        let yr=dt.getFullYear();
+        document.write(dy+"/"+mnth+"/"+yr+"<br>")
+        
+        switch(dy)
+        {
+            case 0:document.write("SUNDAY");break;
+            case 1:document.write("MONDAY");break;
+            case 2:document.write("TUESDAY");break;
+            case 3:document.write("WEDNESDAY");break;
+            case 4:document.write("THURSDAY");break;
+            case 5:document.write("FRIDAY");break;
+            case 6:document.write("SATURDAY");break;
+        }
+
+
+    </script>
+    
+</body>
+</html>
