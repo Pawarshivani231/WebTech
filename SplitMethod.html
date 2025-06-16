@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Method</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let a="hi how are you you";
+        let b=a.split(" ");
+        for(let i=0;i<b.length;i++)
+        {
+            for(let j=i+1;j<b.length;j++)
+            {
+                if(b[i]==b[j])
+                {
+                 document.write("duplicate word is="+b[i]);
+                }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

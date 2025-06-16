@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            class demo
+            {
+                constructor(){}
+                demo(){document.write("hii from demo class");}
+                
+            }
+            class demo1 extends demo{
+                constructor(){super()}
+                demo(){document.write("hii from demo1 class");}
+            }
+            class demo2 extends demo1{
+                constructor(){super()}
+                demo(){document.write("hii from demo2 class");}
+            }
+            let a=new demo2();
+            a.demo();
+
+        </script>
+    </div>
+    
+</body>
+</html>

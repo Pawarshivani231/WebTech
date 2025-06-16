@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Property</title>
+        <style type="text/css">
+        div
+        {
+            height: 100px;
+            width: 100px;
+        }
+        .abs
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+        .rel
+        {
+            position: relative;
+            top:120px;
+            left: 50px;
+        }
+        .fix
+        {
+            position: fixed;
+            height: 200px;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            z-index: -1;
+        }
+        .sta
+        {
+            position: static;
+            top: 0px;
+            left: 0px;
+        }
+        .sti
+        {
+            position: sticky;
+            top: 200px;
+            width: 100%;
+            left: 100px;
+        }
+        </style>
+        <body>
+            <div class="abs" style="background-color: chartreuse;">Absolute</div>
+            <div class="rel" style="background-color: rgb(21, 168, 226);">Relative</div>
+            <div class="fix" style="background-color: rgb(221, 20, 171);">Fixed</div>
+            <div class="sta" style="background-color: rgb(236, 105, 17);">Static</div>
+            <div class="sti" style="background-color: rgb(197, 18, 241);">Sticky</div>
+        </body>
+    </head>
+</html>

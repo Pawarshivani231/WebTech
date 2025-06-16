@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend align="center">PALINDROM</legend>
+                <br>
+                <label>Enter a name</label>
+                <input type="text" name="nm" id="nm">
+                <br><br>
+                <input type="button" name="btn" value="CLICK" onclick="pl()">
+                <p id="yes" style="color: green; font-weight: bolder;"></p>
+                <p id="no" style="color: red; font-weight: bolder;"></p>
+            </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function pl()
+        {
+            let nm=document.getElementById("nm").value;
+            let temp=nm.toLowerCase();
+            let rev="";
+            for(let i=temp.length-1;i>=0;i++)
+            {
+                rev =rev+temp.charAt(i);
+            }
+            if(rev==temp)
+            {
+                document.getElementById("yes").innerHTML="PALINDROM";
+
+            }
+            else{
+                document.getElementById("no").innerHTML="NOT A PALINDROM";
+            }
+            
+        }
+    </script>
+        
+</body>
+</html>

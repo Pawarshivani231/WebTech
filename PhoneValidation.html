@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Phone and username Validation</title>
+    </head>
+    <body>
+        <div>
+            <form>
+                <fieldset>
+                    <label for="un">username<sup style="color: red;">*</sup> : </label>
+                    <input type="text" name="username" pattern="[A-Z,a-z,0-9,]{10,15}" placeholder="shivani" autofocus required>
+
+                    <br><br>
+                    <label for="phno">Phone No <sup style="color: red;">*</sup>:</label>
+                    <input type="text" name="extension" value="+91" disabled size="1">
+                    <input type="text" name="phno" pattern="[6-9]{1}{0-9}{9}"><br><br>
+                    <input type="submit" name="SUBMIT">
+                    <input type="reset" name="RESET">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
