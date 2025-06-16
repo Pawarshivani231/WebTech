@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEN CLOSE WINDOW </title>
+</head>
+<body>
+    <h1>OPEN METHOD</h1>
+    <h2>CLICK THE BELOW BUTTON TO OPEN THE PAGE</h2>
+    <button onclick="Closedemo()">CLICK ME</button>
+    <h2>Click the below button to close that window</h2>
+    <button onclick="Closedemo2()">CLICK ME</button>
+    <script type="text/javascript">
+        let a;
+        function Closedemo()
+        {
+            a = window.open("Sort.html");
+        }
+        function Closedemo2()
+        {
+            a.close();
+        }
+
+    </script>
+    
+</body>
+</html>

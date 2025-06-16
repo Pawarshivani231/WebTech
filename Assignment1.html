@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            .a1{
+                background-color: rgb(242, 192, 92);
+            }
+        </style>
+    </head>
+    <body bgcolor="gray">
+        <div>
+            <form action="login.html">
+                <fieldset>
+                    <legend align="center" style="color: red; font-weight: bolder;">Registration Form</legend>
+                    <label for="un">Username<sup style="color: red;">*</sup>:</label>
+                    <input type="text" name="username" pattern="[A-Z,a-z,0-9]{10,15}" placeholder="Shivani" autofocus required>
+                    <br><br>
+                    <label for="email">Email Id<sup style="color: red;">*</sup>:</label>
+                    <input type="email" name="email" placeholder="shivani123@gmail.com">
+                    <br><br>
+                    <label for="phno">Phone No <sup style="color: red;">*</sup>:</label>
+                    <input type="text" name="extension" value="+91" disabled size="1">
+                    <input type="text" name="phno" pattern="[6-9]{1}[0-9]{9}">
+                    <br><br>
+                    <label for="pass">Password<sup style="color: red;">*</sup>:</label>
+                    <input type="Password" name="pwd"><br><br>
+                    <label for="dod">DOB :</label>
+                    <input type="date" name="dob"><br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+                    <br><br>
+                    <label for="add">Address :</label>
+                    <textarea placeholder="Enter address"></textarea><br><br>
+                    <select class="a1">
+                        <option disabled>Choose your counrty</option>
+                        <option>INDIA</option>
+                        <option>UK</option>
+                        <option>PAKISTAN</option>
+                        <option>JAPAN</option>
+                        <option>SHRILANKA</option>
+                    </select><br><br>
+                    <label for="resume">Upload your resume <sup style="color: red;">*</sup>:</label>
+                    <input type="file" name="resume"><br><br>
+                    <input type="checkbox" name="terms&conditions">I agree and click <sup style="color: red;">*</sup><br><br>
+                    <input type="submit" name="SUBMIT">
+                    <input type="reset" name="RESET"><br><br>
+                    <a href="login.html">Already registered</a>
+                </fieldset>
+            </form>
+        </div>
+
+    </body>
+</html>
