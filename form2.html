@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend align ="center" style="color:blueviolet; font-weight: bolder">REGISTATION FORM</legend>
+                <label for="Un" >Username :</label>
+                <input type="text" name="username" placeholder="Enter name" autofocus><br><br>
+                <label for="email">Email Id :</label>
+                <input type="email" name="email" placeholder="shivanipawar@gmail.com"><br><br>
+                <br><br>
+                <label for="phone">Phone No :</label>
+                <input type="text" name="extention" value="+91" disabled size="0.5">
+                <input type="text" name="phon" pattern="[0-9]{10}">
+                <br><br>
+                <label for="pass">Password :</label>
+                <input type="password" name="pwd">
+                <br><br>
+                <label for="cpass">Confirm Password :</label>
+                <input type="password" name="pwd">
+                <br><br>
+                <label for="dob">DOB :</label>
+                <input type="date" name="dob">
+                <br><br>
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+                <br><br>
+                <label for="resume">Upload your resume :</label>
+                <input type="file" name="resume" >
+                <br><br>
+                <input type="checkbox" name="t&c">I agree and click<br><br>
+                <input type="submit" name="SUBMIT">
+                <input type="button" name="cancel" value="CANCLE">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
